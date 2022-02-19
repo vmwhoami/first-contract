@@ -2,14 +2,12 @@
 
 pragma solidity ^0.8.7;
 
-contract FistContract {
-    string public message;
-
-    function Inbox(string memory initialMessage) public {
-    	message = initialMessage;
+contract HelloWorld {
+    uint256 counter = 5;
+    function increment() public {  
+        counter++;
     }
-
-    function setMessage(string memory newMessage) public {
-    	message = newMessage;
+    function decrement() public { 
+        counter--;
     }
 }
